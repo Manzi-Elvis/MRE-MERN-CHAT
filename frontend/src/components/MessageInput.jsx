@@ -4,7 +4,7 @@ import { useChatStore } from "../store/useChatStore";
 import toast from "react-hot-toast";
 import { ImageIcon, SendIcon, XIcon } from "lucide-react";
 
-function MessageInput() {
+export default function MessageInput() {
   const { playRandomKeyStrokeSound } = useKeyboardSound();
   const [text, setText] = useState("");
   const [imagePreview, setImagePreview] = useState(null);
@@ -105,4 +105,3 @@ function MessageInput() {
     </div>
   );
 }
-export default MessageInput;
